@@ -19,7 +19,40 @@ Lightweight and limited components
   > export FLASK_APP=flashcards.py  
   
 * What environment  ( dev enables debugger )
-  > FLASK_ENV=development  
+  > export FLASK_ENV=development  
                        
 * Start Command
   > flask run                
+
+### How to add some images / css / javascript
+
+ subfolder static/
+ 
+___
+## Model Template View Pattern
+ 
+ * View - Functions already defined by @app.route functions  
+ 
+ * Jinja Templates   
+   - Display data to users  
+   - Generating HTML  
+   - Calling templates from views(func)  
+   - Passing Data from view to template  
+   - Jinja variables  
+ 
+ * Data Model ( DB side )  
+   - model layer
+ 
+ ### Jinja Templates 
+ 
+ 1) import the render_template and pass the template name  
+    > return render_template("welcome.html")  
+     
+ 2) __/templates__ folder is where the scan happens  
+ 
+ 3) __{{message}}__ : Jinja variable in the html for eval  
+    Value passed from the view(function)    
+     > return render_template("welcome.html" , message="<messageContent>")
+ 
+ ### Model Layer   
+ 
