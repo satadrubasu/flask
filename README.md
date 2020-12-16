@@ -54,5 +54,28 @@ ___
     Value passed from the view(function)    
      > return render_template("welcome.html" , message="<messageContent>")
  
- ### Model Layer   
+ ### Model Layer [ DB] 
+   Refer to the model.py module
+   
+   
+## Logic Handling
+
+  * View(Function) Logic
+     - Take Arg from Url   
+       > @app.route('/card/<int:index>')
+         
+     - Return HTTP Error  
+       > import abort -- abort(404)  
+         
+     - Serving Data as REST API    
+     
+  *  Template Logic
+    - Jinja For and IF statements 
+       > refer to card.html  
+   - Creating Links to Cards
  
+ 
+ ## Rest API ( Data )
+ 
+ refer to @app.route('/api/**) in flashcards.py
+ refer how __jsonify__ is used on List obejcts
