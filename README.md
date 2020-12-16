@@ -132,3 +132,9 @@ ___
   Restart the nginx service  
   > sudo service nginx restart
   
+## Prometheus Flask Exporter
+ In your venv install the prometheus-flask-exporter  
+ > pip install prometheus-flask-exporter  
+
+
+
